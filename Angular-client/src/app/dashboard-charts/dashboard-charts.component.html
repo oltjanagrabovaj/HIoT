@@ -1,0 +1,135 @@
+<app-index></app-index>
+<div class="about-section" style="margin-top: 7%;">
+  <h1>Dashboard of Real Data Health Parameters</h1>
+</div>
+<!-- <img src="src/assets/Image/hospital-background1.jpg"> -->
+<div class="row spaceDiv">
+  <div class="col-md-6 ">
+    <div class="card dashboardTable card1Style">
+      <div class="card-body">
+        <div class="card-title">
+          <h5 class="displCenter">Blood Pressure Statistics</h5>
+        </div>
+        <ngx-charts-bar-vertical [results]="bloodPresure" [view]="view" [scheme]="colorScheme" [schemeType]="schemeType"
+          [gradient]="gradient" [xAxis]="xAxis" [yAxis]="yAxis" [legend]="legend" [showXAxisLabel]="showXAxisLabel"
+          [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="xAxisLabel" [yAxisLabel]="yAxisLabel"
+          [legendTitle]="legendTitle" [legendPosition]="legendPosition" [animations]="animations"
+          [showGridLines]="showGridLines" [showDataLabel]="showDataLabel" [barPadding]="barPadding"
+          [tooltipDisabled]="tooltipDisabled" [roundEdges]="roundEdges"></ngx-charts-bar-vertical>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6" >
+    <div class="card dashboardTable card2Style">
+      <div class="card-body">
+        <h5 class="displCenter">
+          Heart Rate
+        </h5>
+        <div style=" justify-content: center; margin-left: 50px;">
+          <ngx-charts-linear-gauge [value]="value" [scheme]="colorScheme" [previousValue]="previousValue" [units]="units">
+          </ngx-charts-linear-gauge>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row spaceDiv">
+  <div class="col-md-6">
+    <div class="card dashboardTable card3Style">
+      <div class="card-body">
+        <div class="card-title">
+          <h5 class="displCenter">Cholesterol Rate</h5>
+        </div>
+        <ngx-charts-pie-chart
+        [results] = "cholesterolRate"
+        [view]= "viewChl"
+        [doughnut] = "false"
+        [scheme]="colorScheme"
+        [gradient]="gradient"
+        [legend]="legend"
+        [legendPosition] ="legendPosition"
+        [labels]="showLabels">
+   
+        </ngx-charts-pie-chart> 
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card dashboardTable card4Style" style="height: 450px;">
+<div class="card-body">
+  <div class="card-title">
+<h5 class="displCenter">Body Mass Index</h5>
+  </div>
+  <ngx-charts-pie-grid [results] = "bodyMassIndex"
+  [view]="viewBmi"
+  [scheme]="colorScheme">
+
+  </ngx-charts-pie-grid>
+
+</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- <table >
+    <tr>
+      <td>
+        <ngx-charts-bar-vertical [results] = "produstSales"
+        [view]= "view"
+        [scheme]="colorScheme"
+        [schemeType]="schemeType"
+        [gradient]="gradient"
+        [xAxis]="xAxis"
+        [yAxis]="yAxis"
+        [legend]="legend"
+        [showXAxisLabel]="showXAxisLabel"
+        [showYAxisLabel]="showYAxisLabel"
+        [xAxisLabel]="xAxisLabel"
+        [yAxisLabel]="yAxisLabel"
+        [legendTitle]="legendTitle"
+        [legendPosition] = "legendPosition"
+        [animations]="animations"
+        [showGridLines]="showGridLines"
+        [showDataLabel]="showDataLabel"
+        [barPadding]="barPadding"
+        [tooltipDisabled]="tooltipDisabled"
+        [roundEdges]="roundEdges"></ngx-charts-bar-vertical>
+      </td>
+      <td>
+          <ngx-charts-linear-gauge
+          [value] = "value"
+          [scheme]="colorScheme"
+          [previousValue]="previousValue"
+          [units]="units"></ngx-charts-linear-gauge>
+      </td>
+    </tr>
+
+    <tr>
+    <td>
+     <ngx-charts-pie-chart
+     [results] = "produstSales"
+     [view]= "view"
+     [doughnut] = "false"
+     [scheme]="colorScheme"
+     [gradient]="gradient"
+     [legend]="legend"
+     [legendPosition] ="legendPosition"
+     [labels]="showLabels">
+
+     </ngx-charts-pie-chart>   
+    </td>
+
+    <td>
+        <ngx-charts-pie-grid [results] = "produstSales"
+        [view]="view"
+        [scheme]="colorScheme">
+
+        </ngx-charts-pie-grid>
+    </td>
+    </tr>
+
+
+  </table> -->

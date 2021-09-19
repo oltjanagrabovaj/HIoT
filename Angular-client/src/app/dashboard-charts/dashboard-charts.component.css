@@ -1,0 +1,59 @@
+.about-section {
+    padding: 3px;
+    text-align: center;
+    background-color: #2670a1;
+    color: white;
+  }
+
+  .dashboardTable{
+    /* background-image:url('../../assets/Image/hospital-backround1.jpg'); */
+    background-color: #a2dddd
+  }
+  .card1Style{
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  .card2Style{
+    margin-top: 10px;
+    height: 450px;
+    margin-right: 20px;
+  }
+
+  .spaceDiv{
+    justify-content: space-between;
+  }
+
+  .card{
+    border-radius: 8px;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    padding: 7px;
+    cursor: pointer;
+  }
+
+  .card:hover{
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.card3Style{
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.card4Style{
+  margin-top: 10px;
+  height: 450px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.displCenter{
+  display: flex;
+  justify-content: center;
+  color: #227b9e;
+  font-weight: 800;
+  font-size: 22px;
+}
+
+
